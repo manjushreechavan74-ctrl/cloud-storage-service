@@ -1,10 +1,10 @@
+from app.models.user import User
+
 from fastapi import FastAPI
 from sqlalchemy import text
 
 from app.core.database import Base, engine
 from app.models.user import User
-from app.routes.auth import router as auth_router
-
 
 
 Base.metadata.create_all(bind=engine)
@@ -15,8 +15,6 @@ app = FastAPI(
     description="Cloud Based Media File Storage Service",
     version="1.0.0"
 )
-
-app.include_router(auth_router)
 
 
 @app.get("/")
@@ -38,8 +36,4 @@ def health_check():
         }
 
     except Exception as e:
-        return {
-            "status": "unhealthy",
-            "database": "disconnected",
-            "error": str(e)
-        }
+        return 
