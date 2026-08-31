@@ -1,4 +1,6 @@
 from app.models.user import User
+from app.models.file import File
+from app.models.folder import Folder
 
 from fastapi import FastAPI
 from sqlalchemy import text
