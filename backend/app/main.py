@@ -20,10 +20,6 @@ from app.routes.public_shares import router as public_shares_router
 from app.routes.stars import router as stars_router
 
 
-# =========================================================
-# FASTAPI APP
-# =========================================================
-
 app = FastAPI(
     title="Cloud Storage Service",
     description="Cloud Based Media File Storage Service",
