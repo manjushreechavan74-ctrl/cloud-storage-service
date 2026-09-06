@@ -98,3 +98,20 @@ uvicorn app.main:app --reload
 http://127.0.0.1:8000
 http://127.0.0.1:8000/docs
 ```
+### Frontend Setup
+
+1. Open a new terminal.
+
+2. Navigate to the frontend directory:
+
+```bash
+cd frontend
+
+3. Install frontend dependencies:
+
+```bash
+npm install
+
+npm run dev
+
+http://localhost:5173
